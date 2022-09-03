@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/resim_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/yeni_grup"
+        android:title="Yeni grup" />
+    <item
+        android:id="@+id/yeni_toplu_mesaj"
+        android:title="Yeni toplu mesaj" />
+    <item
+        android:id="@+id/bagli_cihazlar"
+        android:title="Bağlı cihazlar" />
+    <item
+        android:id="@+id/yildizli_mesajlar"
+        android:title="Yıldızlı mesajlar" />
+    <item
+        android:id="@+id/ayarlar"
+        android:title="Ayarlar" />
+</menu>

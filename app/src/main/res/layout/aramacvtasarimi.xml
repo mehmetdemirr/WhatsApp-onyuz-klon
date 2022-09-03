@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/aresim"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:background="#F1E9E9"
+                android:foreground="@drawable/rounded_fg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/atarih"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/resim_person" />
+
+            <ImageView
+                android:id="@+id/sonArama"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="25dp"
+                android:background="#FFFFFF"
+                android:tint="@color/arkaplan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/resim_goruntuluara" />
+
+            <TextView
+                android:id="@+id/atarih"
+                android:layout_width="146dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="8dp"
+                android:text="Tarih"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sonArama"
+                app:layout_constraintStart_toEndOf="@+id/aresim" />
+
+            <TextView
+                android:id="@+id/akullanici_ad"
+                android:layout_width="200dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="3dp"
+                android:text="Büşra"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/atarih"
+                app:layout_constraintEnd_toStartOf="@+id/sonArama"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toEndOf="@+id/aresim"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
